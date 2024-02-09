@@ -1,0 +1,42 @@
+:root {
+  --Dark-Blue: hsl(209, 23%, 22%);
+  --Very-Dark-Blue: hsl(207, 26%, 17%);
+  --Very-Dark-Blue: hsl(200, 15%, 8%);
+  --Dark-Gray: hsl(0, 0%, 52%);
+  --Very-Light: hsl(0, 0%, 98%);
+  --White: hsl(0, 0%, 100%);
+}
+
+.parent {
+  overflow-y: hidden;
+}
+
+.country-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.contry-card {
+  position: relative;
+  background-color: var(--Dark-Blue);
+  border-radius: 10px;
+  margin-bottom: 2px;
+
+  img {
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+  }
+
+  p {
+    color: white;
+    background-color: var(--Dark-Blue);
+    padding: 0 10px 0 10px;
+  }
+
+  p:not(:first-child) {
+    margin-top: 5px;
+  }
+}
